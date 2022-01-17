@@ -1,0 +1,22 @@
+{
+	"name": "dstoffels.github.io",
+	"version": "1.0.0",
+	"description": "A portfolio to end all others...",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o css/ --recursive"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dstoffels/dstoffels.github.io.git"
+	},
+	"author": "danO",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dstoffels/dstoffels.github.io/issues"
+	},
+	"homepage": "https://github.com/dstoffels/dstoffels.github.io#readme",
+	"dependencies": {
+		"node-sass": "^7.0.1"
+	}
+}
