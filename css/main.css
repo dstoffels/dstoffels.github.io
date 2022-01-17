@@ -1,4 +1,41 @@
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
 nav {
   width: 100vw;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.424); }
+  background-color: rgba(0, 0, 0, 0.424);
+  position: fixed; }
+  nav .nav-block {
+    position: absolute;
+    top: 32px;
+    display: inline-block; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px; }
+      nav ul li a {
+        text-decoration: none; }
+
+#nav-logo {
+  left: 230px; }
+  #nav-logo h1 {
+    color: #bb00bb; }
+
+#nav-list-items {
+  right: 252px; }
+
+#nav-links {
+  right: 56px; }
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: black; }

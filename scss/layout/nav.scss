@@ -1,0 +1,50 @@
+nav {
+	width: 100vw;
+	height: 50px;
+	background-color: rgba($color-black, 0.424);
+	position: fixed;
+
+	.nav {
+		&-block {
+			position: absolute;
+			top: 32px;
+			display: inline-block;
+		}
+
+		&-list {
+			&-item {
+			}
+		}
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin-right: 10px;
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+#nav {
+	&-logo {
+		left: 230px;
+
+		h1 {
+			color: rgb(187, 0, 187);
+		}
+	}
+	&-list-items {
+		right: 252px;
+		a {
+		}
+	}
+	&-links {
+		right: 56px;
+	}
+}
