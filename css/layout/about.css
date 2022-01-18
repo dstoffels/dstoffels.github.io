@@ -1,0 +1,9 @@
+.about_me-left {
+  display: flex;
+  align-items: flex-start;
+  text-align: left; }
+
+.about_me-right {
+  display: flex;
+  align-items: flex-end;
+  text-align: right; }

@@ -4,8 +4,29 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: $std-font;
-	font-size: 10px;
 	scroll-behavior: smooth;
+
+	@include phone_portait {
+	}
+
+	@include tablet_portrait {
+	}
+
+	@include tablet_landscape {
+		font-size: 8px;
+	}
+
+	@include laptop {
+		font-size: 11px;
+	}
+
+	@include desktop {
+		font-size: 12px;
+	}
+}
+
+body {
+	width: 100%;
 }
 
 a {

@@ -4,3 +4,40 @@
 		transition: all 0.2s;
 	}
 }
+
+@mixin center_me {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin phone_portait {
+	@media screen and (max-width: $phone-bp) {
+		@content;
+	}
+}
+
+@mixin tablet_portrait {
+	@media screen and (min-width: $tablet-portrait-bp) {
+		@content;
+	}
+}
+
+@mixin tablet_landscape {
+	@media screen and (min-width: $tablet-landscape-bp) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (min-width: $laptop-bp) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: $desktop-bp) {
+		@content;
+	}
+}

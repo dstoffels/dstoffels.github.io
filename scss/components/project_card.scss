@@ -1,17 +1,16 @@
 .project {
 	&_grid {
-		position: absolute;
-		bottom: 0;
-		width: 80%;
-		max-width: 1536px;
+		padding: 0 $gutter;
+		width: 100%;
 		display: flex;
 		justify-content: center;
-		flex-wrap: wrap;
+		flex-flow: row wrap;
 	}
 
 	&_card {
-		width: 25%;
-		height: 20vw;
+		width: 25rem;
+		height: 25rem;
+		flex: 0 1 auto;
 		max-height: 384px;
 		background-color: $cyan;
 		position: relative;

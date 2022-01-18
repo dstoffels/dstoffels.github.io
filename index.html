@@ -6,7 +6,6 @@
 		<title>dan O stoffels</title>
 	</head>
 	<body>
-		<div class="main">
 			<!-- NAVIGATION -->
 			<nav class="nav">
 				<div class="nav-item" id="nav-logo">
@@ -31,7 +30,7 @@
 					</ul>
 				</div>
 				<div class="nav-item" id="nav-links">
-					<a href="https://github.com/dstoffels" class="">
+					<a href="https://github.com/dstoffels" target="_blank">
 						<img
 							src="images/github_logo.png"
 							alt="github logo"
@@ -43,7 +42,7 @@
 
 			<!-- HOME SECTION -->
 			<section id="home" class="section">
-				<div class="section_div">
+				<div id="intro-block">
 					<div class="text_block centered">
 						<h1 class="text_block-heading">Beyond Engineering.</h1>
 						<p class="text_block-copy">
@@ -72,48 +71,51 @@
 						</h4>
 					</div>
 				</div>
-				<div class="section_div">
 					<img
 						src="images/danimal-med.jpg"
 						alt="80's glam pic of danimal holding brojangles the cat"
 						id="danimal-img"
 					/>
-				</div>
 			</section>
 
 			<!-- ABOUT SECTION -->
 			<section id="about" class="section">
-				<div class="section_div">
-					<div class="text_block">
+				<div class="about_wrapper">
+
+					<div class="about_wrapper-left">
 						<img
-							src="images/dstoffels-drums-lg.jpg"
-							class="text_block-img float-left"
-							alt=""
+						src="images/dstoffels-drums-lg.jpg"
+						class="text_block-img float-left"
+						alt=""
 						/>
-						<h1 class="text_block-heading">all about me.</h1>
-						<h2 class="text_block-subheading">
-							I'm a software engineer based in Nashville, Tennessee.
-						</h2>
-						<p class="text_block-copy">
-							I enjoy solving problems of all kinds with calculated, elegant
-							solutions & dad jokes. Outside of coding, you'll find me behind the drums, on
-							a road bike or in front of a mixing console at a concert.
-						</p>
+						<div class="text_block">
+							<h1 class="text_block-heading">all about me.</h1>
+							<h2 class="text_block-subheading">
+								I'm a software engineer based in Nashville, Tennessee.
+							</h2>
+							<p class="text_block-copy">
+								I enjoy solving problems of all kinds with calculated, elegant
+								solutions and dad jokes. Outside of coding, you'll find me behind the drums, on
+								a road bike or in front of a mixing console at a concert.
+							</p>
+						</div>
 					</div>
-					<div class="text_block right">
+					<div class="about_wrapper-right">
+						<div class="text_block">
+							<h2 class="text_block-subheading">As a person</h2>
+							<p class="text_block-copy">
+								I'm a musician, producer, educator & touring engineer<br />
+								I've made & played music all over the world<br />
+								Long distance cycling is my spirit animal<br />
+								I've only owned electric vehicles since 2019<br />
+								I know almost everything about Star Trek & Star Wars<br />
+							</p>
+						</div>
 						<img
-							src="images/dstoffels_mixing-lg.jpg"
-							class="text_block-img float-right"
-							alt=""
+						src="images/dstoffels_mixing-lg.jpg"
+						class="text_block-img"
+						alt=""
 						/>
-						<h2 class="text_block-subheading">As a person</h2>
-						<p class="text_block-copy">
-							I'm a musician, producer, educator & touring engineer<br />
-							I've made & played music all over the world<br />
-							Long distance cycling is my spirit animal<br />
-							I've only owned electric vehicles since 2019<br />
-							I know almost everything about Star Trek & Star Wars<br />
-						</p>
 					</div>
 				</div>
 			</section>
@@ -162,10 +164,8 @@
 
 			<!-- CONTACT SECTION -->
 			<section id="contact" class="section">
-				<div class="section_div">
+				<div class="contact_wrapper">
 					<img src="images/dstoffels_mic-lg.png" alt="" id="danimal_mic-img">
-				</div>
-				<div class="section_div">
 					<div class="contact_form">
 						<h1 class="contact_form-heading">git in touch.</h1>
 						<form action="">
@@ -186,6 +186,5 @@
 					</div>
 				</div>
 			</section>
-		</div>
 	</body>
 </html>

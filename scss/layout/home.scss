@@ -1,0 +1,15 @@
+#intro-block {
+	position: absolute;
+	top: 50%;
+	left: $gutter;
+	transform: translate(0%, -50%);
+	z-index: 1;
+}
+
+#danimal-img {
+	width: 50rem;
+	position: absolute;
+	right: $gutter;
+	top: 50%;
+	transform: translate(0, -50%);
+}
