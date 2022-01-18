@@ -1,0 +1,31 @@
+.contact_form {
+	width: 40rem;
+
+	&-heading {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	&-field {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+		color: $black;
+
+		& p {
+			font-size: 2rem;
+		}
+	}
+
+	&-btn {
+		background-color: $cyan-dark;
+		border: 2px $cyan-dark solid;
+		font-size: 2rem;
+		padding: 1.5rem 4rem;
+		font-family: $logo-font;
+		float: right;
+
+		&:hover {
+			background-color: rgba($color: $cyan-dark, $alpha: 0);
+		}
+	}
+}

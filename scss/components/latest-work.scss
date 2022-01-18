@@ -17,9 +17,7 @@
 			overflow: hidden;
 			position: relative;
 
-			&-img {
-				// width: 100%;
-			}
+			@include hover_border;
 
 			&-title {
 				position: absolute;

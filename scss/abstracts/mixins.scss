@@ -1,0 +1,6 @@
+@mixin hover_border {
+	&:hover {
+		border: 0.3rem $red-dark solid;
+		transition: all 0.2s;
+	}
+}

@@ -6,6 +6,7 @@
 	align-items: center;
 	justify-content: space-around;
 	z-index: 99;
+	padding-left: 16rem;
 
 	&-item {
 		margin: 1rem 0;
@@ -20,11 +21,6 @@
 
 			a {
 				font-size: 3rem;
-
-				&:hover {
-					color: $logo-color;
-					transition: all 0.2s;
-				}
 			}
 		}
 	}

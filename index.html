@@ -43,7 +43,7 @@
 
 			<!-- HOME SECTION -->
 			<section id="home" class="section">
-				<div class="section-div">
+				<div class="section_div">
 					<div class="text_block centered">
 						<h1 class="text_block-heading">Beyond Engineering.</h1>
 						<p class="text_block-copy">
@@ -72,7 +72,7 @@
 						</h4>
 					</div>
 				</div>
-				<div class="section-div">
+				<div class="section_div">
 					<img
 						src="images/danimal-med.jpg"
 						alt="80's glam pic of danimal holding brojangles the cat"
@@ -83,7 +83,7 @@
 
 			<!-- ABOUT SECTION -->
 			<section id="about" class="section">
-				<div class="section-div">
+				<div class="section_div">
 					<div class="text_block">
 						<img
 							src="images/dstoffels-drums-lg.jpg"
@@ -91,12 +91,12 @@
 							alt=""
 						/>
 						<h1 class="text_block-heading">all about me.</h1>
-						<h1 class="text_block-subheading">
+						<h2 class="text_block-subheading">
 							I'm a software engineer based in Nashville, Tennessee.
-						</h1>
+						</h2>
 						<p class="text_block-copy">
 							I enjoy solving problems of all kinds with calculated, elegant
-							solutions. Outside of coding, you'll find me behind the drums, on
+							solutions & dad jokes. Outside of coding, you'll find me behind the drums, on
 							a road bike or in front of a mixing console at a concert.
 						</p>
 					</div>
@@ -106,7 +106,7 @@
 							class="text_block-img float-right"
 							alt=""
 						/>
-						<h1 class="text_block-subheading">As a person</h1>
+						<h2 class="text_block-subheading">As a person</h2>
 						<p class="text_block-copy">
 							I'm a musician, producer, educator & touring engineer<br />
 							I've made & played music all over the world<br />
@@ -120,57 +120,37 @@
 
 			<!-- PORTFOLIO SECTION -->
 			<section id="portfolio" class="section">
+				<h1 id="portfolio_heading">my work.</h1>
 				<div class="project_grid">
-					<a class="project_card">
+					<a href="#portfolio" class="project_card">
 						<img src="" alt="project image">
 						<div class="project_card-title_bar">
 							<h3 class="project_card-title">Project Title</h4>
 							<p class="project_card-desc">Description</p>
 						</div>
 					</a>
-					<a class="project_card">
+					<a href="#portfolio" class="project_card">
 						<img src="" alt="project image">
 						<div class="project_card-title_bar">
 							<h3 class="project_card-title">Project Title</h4>
 							<p class="project_card-desc">Description</p>
 						</div>
 					</a>
-					<a class="project_card">
+					<a href="#portfolio" class="project_card">
 						<img src="" alt="project image">
 						<div class="project_card-title_bar">
 							<h3 class="project_card-title">Project Title</h4>
 							<p class="project_card-desc">Description</p>
 						</div>
 					</a>
-					<a class="project_card">
+					<a href="#portfolio" class="project_card">
 						<img src="" alt="project image">
 						<div class="project_card-title_bar">
 							<h3 class="project_card-title">Project Title</h4>
 							<p class="project_card-desc">Description</p>
 						</div>
 					</a>
-					<a class="project_card">
-						<img src="" alt="project image">
-						<div class="project_card-title_bar">
-							<h3 class="project_card-title">Project Title</h4>
-							<p class="project_card-desc">Description</p>
-						</div>
-					</a>
-					<a class="project_card">
-						<img src="" alt="project image">
-						<div class="project_card-title_bar">
-							<h3 class="project_card-title">Project Title</h4>
-							<p class="project_card-desc">Description</p>
-						</div>
-					</a>
-					<a class="project_card">
-						<img src="" alt="project image">
-						<div class="project_card-title_bar">
-							<h3 class="project_card-title">Project Title</h4>
-							<p class="project_card-desc">Description</p>
-						</div>
-					</a>
-					<a class="project_card">
+					<a href="#portfolio" class="project_card">
 						<img src="" alt="project image">
 						<div class="project_card-title_bar">
 							<h3 class="project_card-title">Project Title</h4>
@@ -181,7 +161,31 @@
 			</section>
 
 			<!-- CONTACT SECTION -->
-			<section id="contact" class="section"></section>
+			<section id="contact" class="section">
+				<div class="section_div">
+					<img src="images/dstoffels_mic-lg.png" alt="" id="danimal_mic-img">
+				</div>
+				<div class="section_div">
+					<div class="contact_form">
+						<h1 class="contact_form-heading">git in touch.</h1>
+						<form action="">
+							<div class="contact_form-field">
+								<p>name</p>
+								<input type="text" name="name">
+							</div>
+							<div class="contact_form-field">
+								<p>email</p>
+								<input type="email" name="email">
+							</div>
+							<div class="contact_form-field">
+								<p>message</p>
+								<textarea name="message" id="" cols="30" rows="10"></textarea>
+							</div>
+							<button class="contact_form-btn" name="submit" type="submit">send</button>
+						</form>
+					</div>
+				</div>
+			</section>
 		</div>
 	</body>
 </html>

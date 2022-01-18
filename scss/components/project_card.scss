@@ -2,7 +2,8 @@
 	&_grid {
 		position: absolute;
 		bottom: 0;
-		width: 100%;
+		width: 80%;
+		max-width: 1536px;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -10,9 +11,12 @@
 
 	&_card {
 		width: 25%;
-		height: 25vw;
+		height: 20vw;
+		max-height: 384px;
 		background-color: $cyan;
 		position: relative;
+
+		@include hover_border;
 
 		& img {
 			width: 100%;
@@ -28,16 +32,12 @@
 				width: 100%;
 				bottom: 0;
 				padding: 1.2rem 0.5rem;
-				background-color: rgba($color: $black, $alpha: 0.5);
 				background: linear-gradient(
 					169deg,
 					rgba($color: $black, $alpha: 0.8),
 					rgba($color: $black, $alpha: 0.1)
 				);
 			}
-		}
-
-		&-desc {
 		}
 	}
 }
