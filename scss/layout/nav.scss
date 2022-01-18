@@ -1,50 +1,44 @@
-nav {
-	width: 100vw;
-	height: 50px;
-	background-color: rgba($color-black, 0.424);
+.nav {
+	background-color: rgba($color: $black, $alpha: 0.5);
 	position: fixed;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 99;
 
-	.nav {
-		&-block {
-			position: absolute;
-			top: 32px;
-			display: inline-block;
-		}
-
-		&-list {
-			&-item {
-			}
-		}
+	&-item {
+		margin: 1rem 0;
 	}
 
-	ul {
-		list-style: none;
+	&-list {
+		list-style-type: none;
 
-		li {
-			display: inline-block;
-			margin-right: 10px;
+		&-item {
+			float: left;
+			padding: 0 2rem;
 
 			a {
-				text-decoration: none;
+				font-size: 3rem;
+
+				&:hover {
+					color: $logo-color;
+					transition: all 0.2s;
+				}
 			}
 		}
 	}
 }
 
-#nav {
-	&-logo {
-		left: 230px;
+#nav-logo {
+	h1 {
+		font-size: 3.5rem;
+		font-family: $logo-font;
+		font-weight: 100;
+		color: $logo-color;
+	}
+}
 
-		h1 {
-			color: rgb(187, 0, 187);
-		}
-	}
-	&-list-items {
-		right: 252px;
-		a {
-		}
-	}
-	&-links {
-		right: 56px;
-	}
+#github-logo {
+	width: 5rem;
 }

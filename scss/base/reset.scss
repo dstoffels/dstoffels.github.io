@@ -1,10 +1,13 @@
 * {
-	color: $color-white;
+	color: $white;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: $std-font;
+	font-size: 10px;
 }
 
 a {
+	font-size: inherit;
 	text-decoration: none;
 }

@@ -1,0 +1,8 @@
+.project_grid {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  background-color: white !important; }
+
+.project_card {
+  width: 25vw; }

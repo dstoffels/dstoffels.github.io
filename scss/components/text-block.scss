@@ -1,0 +1,38 @@
+.text_block {
+	margin: 10rem;
+	&-img {
+		border: 0.5rem $white solid;
+		width: 40rem;
+		// position: absolute;
+		// // bottom: 0;
+		// // right: 0;
+
+		&.float-left {
+			float: left;
+			margin-right: 5rem;
+		}
+
+		&.float-right {
+			float: right;
+			margin-left: 5rem;
+		}
+	}
+
+	&-heading {
+		font-size: 5rem;
+		color: $cyan-light;
+		margin-bottom: 2rem;
+	}
+
+	&-subheading {
+		font-size: 3rem;
+		font-weight: 100;
+		color: $red;
+		margin-bottom: 1.5rem;
+	}
+
+	&-copy {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+}

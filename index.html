@@ -1,65 +1,187 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://use.typekit.net/msy2zkj.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<title>dan O stoffels</title>
 	</head>
 	<body>
 		<div class="main">
 			<!-- NAVIGATION -->
-			<nav>
-				<div class="nav-block" id="nav-logo">
+			<nav class="nav">
+				<div class="nav-item" id="nav-logo">
 					<a href="#" class="logo-lnk">
 						<h1>dan o stoffels</h1>
 					</a>
 				</div>
-				<div class="nav-block" id="nav-list-items">
+				<div class="nav-item" id="nav-list-items">
 					<ul class="nav-list">
 						<li class="nav-list-item">
-							<a href="#about" class="nav-item">about</a>
+							<a href="#about">about</a>
 						</li>
 						<li class="nav-list-item">
-							<a href="#portfolio" class="nav-item">portfolio</a>
+							<a href="#portfolio">portfolio</a>
 						</li>
 						<li class="nav-list-item">
-							<a href="#contact" class="nav-item">contact</a>
+							<a href="#contact">contact</a>
 						</li>
 						<li class="nav-list-item">
 							<a href="#" class="nav-item">resume</a>
 						</li>
 					</ul>
 				</div>
-				<div class="nav-block" id="nav-links">
+				<div class="nav-item" id="nav-links">
 					<a href="https://github.com/dstoffels" class="">
-						<img src="" alt="github logo" id="github-logo" />
+						<img
+							src="images/github_logo.png"
+							alt="github logo"
+							id="github-logo"
+						/>
 					</a>
 				</div>
 			</nav>
 
 			<!-- HOME SECTION -->
-			<section id="home" class="main-section">
-				<div class="section-right-1">
-					<img src="images/danimal-med.jpg" alt="The Danimal" id="danimal" />
-				</div>
-				<div class="section-left-1">
-					<div class="text-cluster">
-						<h1 class="heading">Beyond Engineering.</h1>
-						<p class="copy">
+			<section id="home" class="section">
+				<div class="section-div">
+					<div class="text_block centered">
+						<h1 class="text_block-heading">Beyond Engineering.</h1>
+						<p class="text_block-copy">
 							Software engineer specializing in <br />elegant full stack
 							solutions with <br />exceptional taste in cats & suspenders.
+						</p>
+					</div>
+					<div class="latest_work">
+						<h4 class="latest_work-heading">latest work.</h4>
+						<div class="latest_work-list">
+							<a href="#" class="latest_work-list-item">
+								<img src="" alt="img" class="latest_work-list-item-img" />
+								<h4 class="latest_work-list-item-title">Title</h4>
+							</a>
+							<a href="#" class="latest_work-list-item">
+								<img src="" alt="img" class="latest_work-list-item-img" />
+								<h4 class="latest_work-list-item-title">Title</h4>
+							</a>
+							<a href="#" class="latest_work-list-item">
+								<img src="" alt="img" class="latest_work-list-item-img" />
+								<h4 class="latest_work-list-item-title">Title</h4>
+							</a>
+						</div>
+						<h4 class="latest_work-heading right">
+							<a href="#portfolio">see more...</a>
+						</h4>
+					</div>
+				</div>
+				<div class="section-div">
+					<img
+						src="images/danimal-med.jpg"
+						alt="80's glam pic of danimal holding brojangles the cat"
+						id="danimal-img"
+					/>
+				</div>
+			</section>
+
+			<!-- ABOUT SECTION -->
+			<section id="about" class="section">
+				<div class="section-div">
+					<div class="text_block">
+						<img
+							src="images/dstoffels-drums-lg.jpg"
+							class="text_block-img float-left"
+							alt=""
+						/>
+						<h1 class="text_block-heading">all about me.</h1>
+						<h1 class="text_block-subheading">
+							I'm a software engineer based in Nashville, Tennessee.
+						</h1>
+						<p class="text_block-copy">
+							I enjoy solving problems of all kinds with calculated, elegant
+							solutions. Outside of coding, you'll find me behind the drums, on
+							a road bike or in front of a mixing console at a concert.
+						</p>
+					</div>
+					<div class="text_block right">
+						<img
+							src="images/dstoffels_mixing-lg.jpg"
+							class="text_block-img float-right"
+							alt=""
+						/>
+						<h1 class="text_block-subheading">As a person</h1>
+						<p class="text_block-copy">
+							I'm a musician, producer, educator & touring engineer<br />
+							I've made & played music all over the world<br />
+							Long distance cycling is my spirit animal<br />
+							I've only owned electric vehicles since 2019<br />
+							I know almost everything about Star Trek & Star Wars<br />
 						</p>
 					</div>
 				</div>
 			</section>
 
-			<!-- ABOUT SECTION -->
-			<section id="about" class="main-section"></section>
-
 			<!-- PORTFOLIO SECTION -->
-			<section id="portfolio" class="main-section"></section>
+			<section id="portfolio" class="section">
+				<div class="project_grid">
+					<a class="project_card">
+						<img src="" alt="project image">
+						<div class="project_card-title_bar">
+							<h3 class="project_card-title">Project Title</h4>
+							<p class="project_card-desc">Description</p>
+						</div>
+					</a>
+					<a class="project_card">
+						<img src="" alt="project image">
+						<div class="project_card-title_bar">
+							<h3 class="project_card-title">Project Title</h4>
+							<p class="project_card-desc">Description</p>
+						</div>
+					</a>
+					<a class="project_card">
+						<img src="" alt="project image">
+						<div class="project_card-title_bar">
+							<h3 class="project_card-title">Project Title</h4>
+							<p class="project_card-desc">Description</p>
+						</div>
+					</a>
+					<a class="project_card">
+						<img src="" alt="project image">
+						<div class="project_card-title_bar">
+							<h3 class="project_card-title">Project Title</h4>
+							<p class="project_card-desc">Description</p>
+						</div>
+					</a>
+					<a class="project_card">
+						<img src="" alt="project image">
+						<div class="project_card-title_bar">
+							<h3 class="project_card-title">Project Title</h4>
+							<p class="project_card-desc">Description</p>
+						</div>
+					</a>
+					<a class="project_card">
+						<img src="" alt="project image">
+						<div class="project_card-title_bar">
+							<h3 class="project_card-title">Project Title</h4>
+							<p class="project_card-desc">Description</p>
+						</div>
+					</a>
+					<a class="project_card">
+						<img src="" alt="project image">
+						<div class="project_card-title_bar">
+							<h3 class="project_card-title">Project Title</h4>
+							<p class="project_card-desc">Description</p>
+						</div>
+					</a>
+					<a class="project_card">
+						<img src="" alt="project image">
+						<div class="project_card-title_bar">
+							<h3 class="project_card-title">Project Title</h4>
+							<p class="project_card-desc">Description</p>
+						</div>
+					</a>
+				</div>
+			</section>
 
 			<!-- CONTACT SECTION -->
-			<section id="contact" class="main-section"></section>
+			<section id="contact" class="section"></section>
 		</div>
 	</body>
 </html>
