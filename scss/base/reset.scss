@@ -5,15 +5,17 @@
 	box-sizing: border-box;
 	font-family: $std-font;
 	scroll-behavior: smooth;
+	font-size: 10px;
 
 	@include phone_portait {
 	}
 
 	@include tablet_portrait {
+		// font-size: 8px;
 	}
 
 	@include tablet_landscape {
-		font-size: 8px;
+		font-size: 10px;
 	}
 
 	@include laptop {
@@ -21,7 +23,7 @@
 	}
 
 	@include desktop {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 

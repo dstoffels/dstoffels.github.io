@@ -1,20 +1,14 @@
 .text_block {
 	width: 50rem;
-	margin: 0 2rem;
+	margin: auto;
+
+	@include tablet_portrait {
+		margin: 0 2rem;
+	}
 
 	&-img {
 		border: 0.5rem $white solid;
 		width: 40rem;
-
-		&.float-left {
-			float: left;
-			// margin-right: 5rem;
-		}
-
-		&.float-right {
-			float: right;
-			margin-left: 5rem;
-		}
 	}
 
 	&-heading {

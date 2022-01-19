@@ -1,9 +1,15 @@
 #danimal_mic-img {
 	height: 100vh;
+	display: none;
+
+	@include tablet_portrait {
+		display: block;
+	}
 }
 
 .contact_wrapper {
 	position: relative;
 	display: flex;
 	justify-content: space-around;
+	z-index: 1;
 }
