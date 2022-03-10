@@ -10,14 +10,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout actions
         uses: actions/checkout@v2
 
       - name: set env vars
-        run: echo "date-stamp=${{env.DATE_STAMP}}" >> $GITHUB_DEV
+        run: echo "date-stamp=${{ env.DATE_STAMP }}" >> $GITHUB_ENV
 
       - name: build img
         run: docker build . --file Dockerfile --tag dstoffels/portfolio:latest
