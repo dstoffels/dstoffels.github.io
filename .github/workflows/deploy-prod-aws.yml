@@ -1,4 +1,40 @@
 name: Deploy production img to AWS
 
 env:
-  APP_NAME:
+  APP_NAME: portfolio
+  AWS_REGION: us-east-1
+  AWS_PLATFORM: Docker
+  PIPELINE_ID: $GITHUB_RUN_ID-$GITHUB_RUN_NUMBER
+  DATE_STAMP: $(date +%s)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-to-aws:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: AWS credential config
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - run: |
+          echo "aws_version_label=${{ env.APP_NAME }}-${{env.PIPELINE_ID}}" >> $GITHUB_ENV
+          echo "date-stamp=${{env.DATE_STAMP}}" >> $GITHUB_ENV
+
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: ${{ env.APP_NAME }}
+          environment_name: Myawesomeappdrs-env
+          version_label: ${{ env.aws_version_label }}
+          region: ${{ env.AWS_REGION }}
+          deployment_package: docker-compose.yml
