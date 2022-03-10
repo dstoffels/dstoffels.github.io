@@ -1,7 +1,14 @@
-FROM node:14-bullseye
-WORKDIR /user/src
+FROM node:14-bullseye as build
+WORKDIR /src
 COPY package*.json ./
+COPY package-lock.json ./
 RUN npm ci
 COPY ./ ./
-ENV APP_PORT 8080
-EXPOSE 8080
+
+FROM nginx:stable-alpine as prod
+
+COPY --from=build /src/ usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
