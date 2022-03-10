@@ -9,6 +9,6 @@ FROM nginx:stable-alpine as prod
 
 COPY --from=build /src/ usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
